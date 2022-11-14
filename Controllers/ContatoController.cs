@@ -56,7 +56,7 @@ namespace MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Criar(Contato contato){
+        public IActionResult CriarContato(Contato contato){
             if (ModelState.IsValid){
                 _context.Contatos.Add(contato);
                 _context.SaveChanges();
